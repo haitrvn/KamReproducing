@@ -18,6 +18,6 @@ jobs:
 
       - name: Make gradlew executable
         run: chmod +x ./gradlew
-        
+
       - name: podPublishXCFramework
-        run: ./gradlew :library:podPublishXCFramework --no-configuration-cache
+        run: ./gradlew :podPublishXCFramework --no-configuration-cache
