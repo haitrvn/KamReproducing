@@ -7,6 +7,8 @@ jobs:
     name: Release build and publish
     runs-on: macOS-latest
     steps:
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
       - name: Check out code
         uses: actions/checkout@v4
       - name: Set up JDK 21
